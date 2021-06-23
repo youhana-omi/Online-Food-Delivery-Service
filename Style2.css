@@ -1,0 +1,223 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding:0;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+
+}
+/* Navigation Bar : logo and Image */
+#logo{
+    margin: 3px 11px;
+
+}
+#logo img{
+height: 64px;
+padding: 6px 25px;
+
+}
+
+/* Navigation Bar : list styling */
+ #navbar ul{
+    display: flex;
+}
+ #navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+ #navbar ul li a{ 
+    margin: 13px;
+    background-color: #27272f;
+    color:#79eba1;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    
+}
+ #navbar ul li a:hover{ 
+    color: red;
+    
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('bg/bg.jpg') no-repeat center center/cover; 
+    position: absolute;
+    /* background-attachment: fixed; */
+    height:100%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    /* background-size: 100% 100%; */
+    z-index: -1;
+    opacity: 0.79;
+
+}
+#home h1{
+    color:hsl(240deg 9% 17%);;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+#home p{
+    /* color:hsl(240deg 9% 17%);; */
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Dela Gothic One', cursive;
+}
+/* services Center */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 43px;
+    margin: 34px;
+    border-radius: 20px;
+    height: 410px;
+    background-color: #fff6473d;
+}
+#services .box img{
+    height: 145px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Baloo 2', cursive;
+}
+/* client section */
+#client-section{
+    height:300px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('bg/bg.jpg') no-repeat center center/cover; 
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#client{
+    /* margin:60px; */
+    display: flex;
+    /* border: 2px solid brown; */
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item img{
+    height: 130px;
+    display: block;
+    margin: auto;
+
+
+}
+.client-item{
+    padding: 60px;
+}
+/* Contact sections */
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+    background: url('bg/contact.jpg') no-repeat center center/cover;
+
+
+}
+#contact-box{
+
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Baloo 2', cursive;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .4rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Dela Gothic One', cursive;
+}
+.h-secondary{
+    font-size: 1.2rem;
+    padding: 12px;
+    font-family: 'Dela Gothic One', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 14px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
